@@ -1,0 +1,5 @@
+west:
+  command: /Users/jamespentz/.local/share/virtualenvs/nucleo_sdmmc-EelB6g7P/bin/west
+    build -b nucleo_h723zg zephyr/samples/subsys/fs/fs_sample -p -DBOARD_FLASH_RUNNER=openocd
+  topdir: /Users/jamespentz/Code/zephyr/nucleo_sdmmc
+  version: 1.2.0

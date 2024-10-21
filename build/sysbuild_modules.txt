@@ -1,0 +1,1 @@
+"mcuboot":"/Users/jamespentz/Code/zephyr/nucleo_sdmmc/bootloader/mcuboot":"/Users/jamespentz/Code/zephyr/nucleo_sdmmc/bootloader/mcuboot/boot/zephyr/sysbuild"
