@@ -1,0 +1,83 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "West Build",
+			"type": "shell",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"linux": {
+				"command": "west"
+			},
+			"args": [
+				"build",
+				"-p",
+				"auto",
+			],
+			"problemMatcher": [
+				"$gcc"
+			]
+		},
+		{
+			"label": "West Configurable Build",
+			"type": "shell",
+			"group": {
+				"kind": "build",
+			},
+			"linux": {
+				"command": "west"
+			},
+			"args": [
+				"build",
+				"${input:app}",
+				"-p",
+				"${input:pristine}",
+				"-b",
+				"${input:board}"
+			],
+			"problemMatcher": [
+				"$gcc"
+			]
+		},
+		{
+			"label": "West Flash",
+			"type": "shell",
+			"linux": {
+				"command": "west"
+			},
+			"args": [
+				"flash"
+			],
+			"problemMatcher": [
+				"$gcc"
+			]
+		},
+	],
+	"inputs": [
+		{
+			"id": "board",
+			"type": "promptString",
+			"default": "nucleo_h723zg",
+			"description": "See https://docs.zephyrproject.org/latest/boards/index.html"
+		},
+		{
+			"id": "pristine",
+			"type": "pickString",
+			"description": "Choose when to run a pristine build",
+			"default": "auto",
+			"options": [
+				"auto",
+				"always",
+				"never"
+			]
+		},
+		{
+			"id": "app",
+			"type": "promptString",
+			"default": "${workspaceFolder}/template_zephyr",
+			"description": "Choose path to app to build",
+		}
+	]
+}

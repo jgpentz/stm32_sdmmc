@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch STM32",
+            "device": "nucleo_h723zg",
+            "targetId": "nucleo_h723zg",
+            "cwd": "${workspaceFolder}",
+            "executable": "build/zephyr/zephyr.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "runToEntryPoint": "main",
+            "servertype": "openocd",
+            "gdbPath": "/opt/zephyr-sdk-0.16.8/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb",
+            "configFiles": [
+                "${workspaceRoot}/zephyr/boards/st/nucleo_h723zg/support/openocd.cfg"
+            ],
+            "rtos": "Zephyr",
+            // "svdPath": "sp16t_firmware/boards/arm/frf_67701/support/STM32H723.svd"
+        },
+        {
+            "name": "Launch Native",
+            "type": "cppdbg",
+            "cwd": "${workspaceFolder}",
+            "request": "launch",
+            "program": "${workspaceRoot}/build/zephyr/zephyr.exe",
+            "args": [
+                // "--attach_uart"
+            ]
+        }
+    ]
+}
