@@ -35,6 +35,12 @@ extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_gpio_port_set_bits_r
 extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_gpio_port_clear_bits_raw;
 extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_gpio_port_toggle_bits;
 extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_gpio_get_pending_int;
+extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_i2c_configure;
+extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_i2c_get_config;
+extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_i2c_transfer;
+extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_i2c_recover_bus;
+extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_i2c_target_driver_register;
+extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_i2c_target_driver_unregister;
 extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_reset_status;
 extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_reset_line_assert;
 extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_reset_line_deassert;
@@ -162,7 +168,6 @@ extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_k_object_release;
 extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_k_object_alloc;
 extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_k_object_alloc_size;
 extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_sys_clock_hw_cycles_per_sec_runtime_get;
-extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_z_errno;
 
 /* Exported symbols */
 EXPORT_SYMBOL(z_impl_zephyr_read_stdin);
@@ -190,6 +195,12 @@ EXPORT_SYMBOL(z_impl_gpio_port_set_bits_raw);
 EXPORT_SYMBOL(z_impl_gpio_port_clear_bits_raw);
 EXPORT_SYMBOL(z_impl_gpio_port_toggle_bits);
 EXPORT_SYMBOL(z_impl_gpio_get_pending_int);
+EXPORT_SYMBOL(z_impl_i2c_configure);
+EXPORT_SYMBOL(z_impl_i2c_get_config);
+EXPORT_SYMBOL(z_impl_i2c_transfer);
+EXPORT_SYMBOL(z_impl_i2c_recover_bus);
+EXPORT_SYMBOL(z_impl_i2c_target_driver_register);
+EXPORT_SYMBOL(z_impl_i2c_target_driver_unregister);
 EXPORT_SYMBOL(z_impl_reset_status);
 EXPORT_SYMBOL(z_impl_reset_line_assert);
 EXPORT_SYMBOL(z_impl_reset_line_deassert);
@@ -317,4 +328,3 @@ EXPORT_SYMBOL(z_impl_k_object_release);
 EXPORT_SYMBOL(z_impl_k_object_alloc);
 EXPORT_SYMBOL(z_impl_k_object_alloc_size);
 EXPORT_SYMBOL(z_impl_sys_clock_hw_cycles_per_sec_runtime_get);
-EXPORT_SYMBOL(z_impl_z_errno);

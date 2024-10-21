@@ -62,9 +62,9 @@
 /Users/jamespentz/code/zephyr/nucleo_sdmmc/build/zephyr/lib/crc/CMakeFiles/rebuild_cache.dir
 /Users/jamespentz/code/zephyr/nucleo_sdmmc/build/zephyr/lib/libc/CMakeFiles/edit_cache.dir
 /Users/jamespentz/code/zephyr/nucleo_sdmmc/build/zephyr/lib/libc/CMakeFiles/rebuild_cache.dir
-/Users/jamespentz/code/zephyr/nucleo_sdmmc/build/zephyr/lib/libc/newlib/CMakeFiles/lib__libc__newlib.dir
-/Users/jamespentz/code/zephyr/nucleo_sdmmc/build/zephyr/lib/libc/newlib/CMakeFiles/edit_cache.dir
-/Users/jamespentz/code/zephyr/nucleo_sdmmc/build/zephyr/lib/libc/newlib/CMakeFiles/rebuild_cache.dir
+/Users/jamespentz/code/zephyr/nucleo_sdmmc/build/zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir
+/Users/jamespentz/code/zephyr/nucleo_sdmmc/build/zephyr/lib/libc/picolibc/CMakeFiles/edit_cache.dir
+/Users/jamespentz/code/zephyr/nucleo_sdmmc/build/zephyr/lib/libc/picolibc/CMakeFiles/rebuild_cache.dir
 /Users/jamespentz/code/zephyr/nucleo_sdmmc/build/zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir
 /Users/jamespentz/code/zephyr/nucleo_sdmmc/build/zephyr/lib/libc/common/CMakeFiles/edit_cache.dir
 /Users/jamespentz/code/zephyr/nucleo_sdmmc/build/zephyr/lib/libc/common/CMakeFiles/rebuild_cache.dir
@@ -187,6 +187,9 @@
 /Users/jamespentz/code/zephyr/nucleo_sdmmc/build/zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir
 /Users/jamespentz/code/zephyr/nucleo_sdmmc/build/zephyr/drivers/gpio/CMakeFiles/edit_cache.dir
 /Users/jamespentz/code/zephyr/nucleo_sdmmc/build/zephyr/drivers/gpio/CMakeFiles/rebuild_cache.dir
+/Users/jamespentz/code/zephyr/nucleo_sdmmc/build/zephyr/drivers/i2c/CMakeFiles/drivers__i2c.dir
+/Users/jamespentz/code/zephyr/nucleo_sdmmc/build/zephyr/drivers/i2c/CMakeFiles/edit_cache.dir
+/Users/jamespentz/code/zephyr/nucleo_sdmmc/build/zephyr/drivers/i2c/CMakeFiles/rebuild_cache.dir
 /Users/jamespentz/code/zephyr/nucleo_sdmmc/build/zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir
 /Users/jamespentz/code/zephyr/nucleo_sdmmc/build/zephyr/drivers/pinctrl/CMakeFiles/edit_cache.dir
 /Users/jamespentz/code/zephyr/nucleo_sdmmc/build/zephyr/drivers/pinctrl/CMakeFiles/rebuild_cache.dir

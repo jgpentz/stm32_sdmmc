@@ -1,4 +1,4 @@
-# Install script for directory: /Users/jamespentz/code/zephyr/nucleo_sdmmc/zephyr/lib/libc/newlib
+# Install script for directory: /Users/jamespentz/code/zephyr/nucleo_sdmmc/zephyr/lib/libc/picolibc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

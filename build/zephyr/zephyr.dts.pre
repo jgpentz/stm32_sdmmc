@@ -6164,5 +6164,12 @@ zephyr_udc0: &usbotg_hs {
     clocks = <&rcc 0x0D4 0x00010000>,
         <&rcc ((0x003 + 1) + 1) ((((0x4C) & 0xFFU) << 0U) | (((16) & 0x1FU) << 8U) | (((1) & 0x7U) << 13U) | (((0) & 0x7U) << 16U))>;
 };
+
+&i2c1 {
+    pinctrl-0 = <&i2c1_scl_pb8 &i2c1_sda_pb9>;
+    pinctrl-names = "default";
+    status = "okay";
+    clock-frequency = <400000>;
+};
 # 0 "<command-line>" 2
 # 1 "/Users/jamespentz/code/zephyr/nucleo_sdmmc/zephyr/misc/empty_file.c"
